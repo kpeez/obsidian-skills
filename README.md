@@ -4,11 +4,18 @@ These skills follow the [Agent Skills specification](https://agentskills.io/spec
 
 ## Installation
 
-### Marketplace
+### Claude Code marketplace
 
 ```
 /plugin marketplace add kepano/obsidian-skills
 /plugin install obsidian@obsidian-skills
+```
+
+### Codex marketplace
+
+```sh
+codex plugin marketplace add kepano/obsidian-skills
+codex plugin add obsidian@obsidian-skills
 ```
 
 ### npx skills
@@ -31,7 +38,7 @@ Add the contents of this repo to a `/.claude` folder in the root of your Obsidia
 
 #### Codex
 
-Copy the `skills/` directory into your Codex skills path (typically `~/.codex/skills`). See the [Agent Skills specification](https://agentskills.io/specification) for the standard skill format.
+Copy the `plugins/obsidian/skills/` directory into your Codex skills path (typically `~/.agents/skills`). See the [Agent Skills specification](https://agentskills.io/specification) for the standard skill format.
 
 #### OpenCode
 
@@ -49,8 +56,8 @@ OpenCode auto-discovers all `SKILL.md` files under `~/.opencode/skills/`. No cha
 
 | Skill | Description |
 |-------|-------------|
-| [obsidian-markdown](skills/obsidian-markdown) | Create and edit [Obsidian Flavored Markdown](https://help.obsidian.md/obsidian-flavored-markdown) (`.md`) with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax |
-| [obsidian-bases](skills/obsidian-bases) | Create and edit [Obsidian Bases](https://help.obsidian.md/bases/syntax) (`.base`) with views, filters, formulas, and summaries |
-| [json-canvas](skills/json-canvas) | Create and edit [JSON Canvas](https://jsoncanvas.org/) files (`.canvas`) with nodes, edges, groups, and connections |
-| [obsidian-cli](skills/obsidian-cli) | Interact with Obsidian vaults via the [Obsidian CLI](https://help.obsidian.md/cli) including plugin and theme development |
-| [defuddle](skills/defuddle) | Extract clean markdown from web pages using [Defuddle](https://github.com/kepano/defuddle), removing clutter to save tokens |
+| [obsidian-markdown](plugins/obsidian/skills/obsidian-markdown) | Create and edit [Obsidian Flavored Markdown](https://help.obsidian.md/obsidian-flavored-markdown) (`.md`) with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax |
+| [obsidian-bases](plugins/obsidian/skills/obsidian-bases) | Create and edit [Obsidian Bases](https://help.obsidian.md/bases/syntax) (`.base`) with views, filters, formulas, and summaries |
+| [json-canvas](plugins/obsidian/skills/json-canvas) | Create and edit [JSON Canvas](https://jsoncanvas.org/) files (`.canvas`) with nodes, edges, groups, and connections |
+| [obsidian-cli](plugins/obsidian/skills/obsidian-cli) | Interact with Obsidian vaults via the [Obsidian CLI](https://help.obsidian.md/cli) including plugin and theme development |
+| [defuddle](plugins/obsidian/skills/defuddle) | Extract clean markdown from web pages using [Defuddle](https://github.com/kepano/defuddle), removing clutter to save tokens |
