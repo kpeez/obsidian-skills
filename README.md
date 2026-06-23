@@ -61,6 +61,16 @@ Do not copy only the inner `skills/` folder — clone the full repo so the direc
 
 OpenCode auto-discovers all `SKILL.md` files under `~/.opencode/skills/`. No changes to `opencode.json` or any config file are needed. Skills become available after restarting OpenCode.
 
+## Release maintenance
+
+Update the plugin version across Claude and Codex metadata with:
+
+```sh
+./scripts/bump-version.sh patch
+```
+
+The script also accepts `major`, `minor`, or an explicit version like `1.1.0`.
+
 ## Skills
 
 | Skill                                                          | Description                                                                                                                                                                                |
